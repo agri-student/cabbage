@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>栽培日記 | キャベツ・ブロッコリー・カリフラワーのフォトギャラリー</title>
+  <meta name="description" content="生徒たちがキャベツ・ブロッコリー・カリフラワーを育てる日々の様子を集めたフォトギャラリー。アブラナ科の仲間たちの豆知識や栽培の記録もお届けします。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A5%AC%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-emoji">🥬</span>
+        <span class="brand-text">栽培日記</span>
+      </a>
+      <nav class="nav" aria-label="メインナビゲーション">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="メニューを開く">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#about">どんな野菜？</a></li>
+          <li><a href="#variety">育てた品種</a></li>
+          <li><a href="#gallery">フォトギャラリー</a></li>
+          <li><a href="#calendar">栽培カレンダー</a></li>
+          <li><a href="#facts">豆知識</a></li>
+          <li><a href="#voice">生徒の声</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== ヒーロー ===== -->
+  <section class="hero">
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-kicker">🥬 アブラナ科の仲間たち 🥦</p>
+      <h1 class="hero-title">生徒たちが育てる<br /><span>キャベツ・ブロッコリー<br />・カリフラワー</span>の物語</h1>
+      <div class="hero-icons" aria-hidden="true">
+        <img src="images/icon-cabbage.svg" alt="" />
+        <img src="images/icon-broccoli.svg" alt="" />
+        <img src="images/icon-cauliflower.svg" alt="" />
+      </div>
+      <p class="hero-lead">
+        定植から収穫まで。汗と笑顔いっぱいの栽培の日々を、<br class="pc-only" />
+        たくさんの写真とともにお届けします。
+      </p>
+      <div class="hero-actions">
+        <a href="#gallery" class="btn btn-primary">📸 ギャラリーを見る</a>
+        <a href="#about" class="btn btn-ghost">野菜を知る</a>
+      </div>
+    </div>
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,64L60,58.7C120,53,240,43,360,48C480,53,600,75,720,80C840,85,960,75,1080,64C1200,53,1320,43,1380,37.3L1440,32L1440,120L0,120Z"></path></svg>
+    </div>
+  </section>
+
+  <main>
+    <!-- ===== どんな野菜？ ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-badge">ABOUT</span>
+          <h2 class="section-title">3つの野菜は、じつは同じ仲間</h2>
+          <p class="section-sub">キャベツもブロッコリーもカリフラワーも、アブラナ科の野菜です。</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-icon">🌍</div>
+            <h3>同じご先祖さま</h3>
+            <p>3つとも学名は <i>Brassica oleracea</i>（ブラシカ・オレラケア）。野生のキャベツから、食べる部分を変えて改良されてきました。ケールや芽キャベツも同じ仲間です。</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon"><img src="images/icon-cabbage.svg" alt="" /></div>
+            <h3>キャベツは「葉」</h3>
+            <p>葉が何枚も重なって、ボールのように丸くまいたもの（結球）を食べます。</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon"><img src="images/icon-broccoli.svg" alt="" /></div>
+            <h3>ブロッコリーは「つぼみ」</h3>
+            <p>つぶつぶの正体は、小さな花のつぼみの集まり（花蕾）。太い茎もおいしく食べられます。</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon"><img src="images/icon-cauliflower.svg" alt="" /></div>
+            <h3>カリフラワーも「つぼみ」</h3>
+            <p>白い花蕾を食べます。ブロッコリーの突然変異から生まれたといわれています。</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">❄️</div>
+            <h3>涼しい季節が得意</h3>
+            <p>暑さよりも涼しさを好む野菜です。夏の終わりから秋に植えて、秋〜冬に収穫する育て方がよく行われます。</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">🐛</div>
+            <h3>青虫に要注意</h3>
+            <p>モンシロチョウの幼虫（アオムシ）やコナガなどが葉を食べにきます。防虫ネットや見回りで守ります。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 今回育てた品種 ===== -->
+    <section class="section section-alt" id="variety">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-badge">VARIETIES</span>
+          <h2 class="section-title">今回育てた品種</h2>
+          <p class="section-sub">今年は3つの野菜を栽培しました。</p>
+        </div>
+        <div class="variety-grid">
+          <article class="variety-card crop-cabbage">
+            <div class="variety-head">
+              <span class="variety-emoji"><img src="images/icon-cabbage.svg" alt="" /></span>
+              <div>
+                <h3>キャベツ</h3>
+                <!-- 品種名と種苗会社を書きます（例：品種名（〇〇種苗）） -->
+                <p class="variety-type"><span class="blank">品種名：未記入</span></p>
+              </div>
+            </div>
+            <p class="variety-lead">食べるところ：葉がまいた「結球」</p>
+            <ul class="variety-feature">
+              <!-- 品種の特徴を <li> で書き足します -->
+              <li><span class="blank">品種の特徴：未記入</span></li>
+            </ul>
+            <div class="variety-tags"><span>結球野菜</span><span>葉を食べる</span></div>
+          </article>
+          <article class="variety-card crop-broccoli">
+            <div class="variety-head">
+              <span class="variety-emoji"><img src="images/icon-broccoli.svg" alt="" /></span>
+              <div>
+                <h3>ブロッコリー</h3>
+                <p class="variety-type"><span class="blank">品種名：未記入</span></p>
+              </div>
+            </div>
+            <p class="variety-lead">食べるところ：緑の花蕾と茎</p>
+            <ul class="variety-feature">
+              <li><span class="blank">品種の特徴：未記入</span></li>
+            </ul>
+            <div class="variety-tags"><span>花蕾を食べる</span><span>茎もおいしい</span></div>
+          </article>
+          <article class="variety-card crop-cauliflower">
+            <div class="variety-head">
+              <span class="variety-emoji"><img src="images/icon-cauliflower.svg" alt="" /></span>
+              <div>
+                <h3>カリフラワー</h3>
+                <p class="variety-type"><span class="blank">品種名：未記入</span></p>
+              </div>
+            </div>
+            <p class="variety-lead">食べるところ：白い花蕾</p>
+            <ul class="variety-feature">
+              <li><span class="blank">品種の特徴：未記入</span></li>
+            </ul>
+            <div class="variety-tags"><span>花蕾を食べる</span><span>白く仕上げる</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== フォトギャラリー ===== -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-badge">PHOTO GALLERY</span>
+          <h2 class="section-title">生徒たちの栽培フォト</h2>
+          <p class="section-sub">写真をタップすると大きく表示されます。</p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="野菜で絞り込み">
+          <button class="filter-btn is-active" data-group="crop" data-filter="all" aria-pressed="true">すべての野菜</button>
+          <button class="filter-btn" data-group="crop" data-filter="cabbage" aria-pressed="false"><img src="images/icon-cabbage.svg" alt="" />キャベツ</button>
+          <button class="filter-btn" data-group="crop" data-filter="broccoli" aria-pressed="false"><img src="images/icon-broccoli.svg" alt="" />ブロッコリー</button>
+          <button class="filter-btn" data-group="crop" data-filter="cauliflower" aria-pressed="false"><img src="images/icon-cauliflower.svg" alt="" />カリフラワー</button>
+        </div>
+        <div class="filter-bar filter-bar-sub" role="group" aria-label="作業で絞り込み">
+          <button class="filter-btn is-active" data-group="category" data-filter="all" aria-pressed="true">すべての作業</button>
+          <button class="filter-btn" data-group="category" data-filter="seed" aria-pressed="false">定植</button>
+          <button class="filter-btn" data-group="category" data-filter="care" aria-pressed="false">日々のお世話</button>
+          <button class="filter-btn" data-group="category" data-filter="grow" aria-pressed="false">育つ様子</button>
+          <button class="filter-btn" data-group="category" data-filter="harvest" aria-pressed="false">収穫・試食</button>
+        </div>
+
+        <div class="gallery" id="gallery-grid">
+          <!-- JavaScriptで写真を差し込みます -->
+        </div>
+        <p class="gallery-empty" id="gallery-empty" hidden>この組み合わせの写真はまだありません。</p>
+      </div>
+    </section>
+
+    <!-- ===== 栽培カレンダー ===== -->
+    <section class="section section-alt" id="calendar">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-badge">GROWING CALENDAR</span>
+          <h2 class="section-title">栽培カレンダー</h2>
+          <p class="section-sub">定植から収穫まで、実際の実習の記録です。</p>
+        </div>
+
+        <div class="cal-tabs" role="tablist" aria-label="野菜の切り替え">
+          <button class="cal-tab is-active" role="tab" aria-selected="true" aria-controls="cal-cabbage" data-crop="cabbage"><img src="images/icon-cabbage.svg" alt="" />キャベツ</button>
+          <button class="cal-tab" role="tab" aria-selected="false" aria-controls="cal-broccoli" data-crop="broccoli"><img src="images/icon-broccoli.svg" alt="" />ブロッコリー</button>
+          <button class="cal-tab" role="tab" aria-selected="false" aria-controls="cal-cauliflower" data-crop="cauliflower"><img src="images/icon-cauliflower.svg" alt="" />カリフラワー</button>
+        </div>
+
+        <!-- 日付（timeline-month）と作業内容（p）を書き換えます。作業が増えたら <li> ごとコピーして追加します -->
+        <ol class="timeline" id="cal-cabbage" role="tabpanel" data-crop="cabbage">
+          <li class="timeline-item">
+            <div class="timeline-marker">🌱</div>
+            <div class="timeline-body">
+              <span class="timeline-month"><span class="blank">日付：未記入</span></span>
+              <h3>定植</h3>
+              <p><span class="blank">作業内容：未記入</span></p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker">🌿</div>
+            <div class="timeline-body">
+              <span class="timeline-month"><span class="blank">日付：未記入</span></span>
+              <h3>日々のお世話</h3>
+              <p><span class="blank">作業内容：未記入</span></p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker">🎉</div>
+            <div class="timeline-body">
+              <span class="timeline-month"><span class="blank">日付：未記入</span></span>
+              <h3>収穫</h3>
+              <p><span class="blank">作業内容：未記入</span></p>
+            </div>
+          </li>
+        </ol>
+
+        <ol class="timeline" id="cal-broccoli" role="tabpanel" data-crop="broccoli" hidden>
+          <li class="timeline-item">
+            <div class="timeline-marker">🌱</div>
+            <div class="timeline-body">
+              <span class="timeline-month"><span class="blank">日付：未記入</span></span>
+              <h3>定植</h3>
+              <p><span class="blank">作業内容：未記入</span></p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker">🌿</div>
+            <div class="timeline-body">
+              <span class="timeline-month"><span class="blank">日付：未記入</span></span>
+              <h3>日々のお世話</h3>
+              <p><span class="blank">作業内容：未記入</span></p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker">🎉</div>
+            <div class="timeline-body">
+              <span class="timeline-month"><span class="blank">日付：未記入</span></span>
+              <h3>収穫</h3>
+              <p><span class="blank">作業内容：未記入</span></p>
+            </div>
+          </li>
+        </ol>
+
+        <ol class="timeline" id="cal-cauliflower" role="tabpanel" data-crop="cauliflower" hidden>
+          <li class="timeline-item">
+            <div class="timeline-marker">🌱</div>
+            <div class="timeline-body">
+              <span class="timeline-month"><span class="blank">日付：未記入</span></span>
+              <h3>定植</h3>
+              <p><span class="blank">作業内容：未記入</span></p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker">🌿</div>
+            <div class="timeline-body">
+              <span class="timeline-month"><span class="blank">日付：未記入</span></span>
+              <h3>日々のお世話</h3>
+              <p><span class="blank">作業内容：未記入</span></p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker">🎉</div>
+            <div class="timeline-body">
+              <span class="timeline-month"><span class="blank">日付：未記入</span></span>
+              <h3>収穫</h3>
+              <p><span class="blank">作業内容：未記入</span></p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== 豆知識 ===== -->
+    <section class="section" id="facts">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-badge">TRIVIA</span>
+          <h2 class="section-title">アブラナ科野菜の豆知識</h2>
+          <p class="section-sub">知ればもっと好きになる、3つの野菜のひみつ。</p>
+        </div>
+        <div class="facts-grid">
+          <div class="fact-card">
+            <span class="fact-num">01</span>
+            <h3>つぼみを食べている</h3>
+            <p>ブロッコリーのつぶつぶは花のつぼみ。収穫が遅れると、つぼみがひらいて黄色い花が咲いてしまいます。</p>
+          </div>
+          <div class="fact-card">
+            <span class="fact-num">02</span>
+            <h3>カリフラワーが白いわけ</h3>
+            <p>花蕾は日光に当たると黄ばんでしまうため、外葉で包んで日をさえぎり白く仕上げます。オレンジや紫色の品種もあります。</p>
+          </div>
+          <div class="fact-card">
+            <span class="fact-num">03</span>
+            <h3>春キャベツと冬キャベツ</h3>
+            <p>冬キャベツは葉がかたく、ぎっしり詰まっていて煮込み料理向き。春キャベツは巻きがゆるくやわらかで、生で食べるのに向いています。</p>
+          </div>
+          <div class="fact-card">
+            <span class="fact-num">04</span>
+            <h3>胃薬の名前の由来</h3>
+            <p>キャベツにはビタミンU（キャベジン）という成分が含まれています。胃腸薬の名前は、このキャベジンに由来しています。</p>
+          </div>
+          <div class="fact-card">
+            <span class="fact-num">05</span>
+            <h3>ブロッコリーは2度おいしい</h3>
+            <p>まん中の大きな花蕾（頂花蕾）を収穫したあと、わき芽から出る小さな花蕾（側花蕾）も収穫できる品種があります。</p>
+          </div>
+          <div class="fact-card">
+            <span class="fact-num">06</span>
+            <h3>ロマネスコも仲間</h3>
+            <p>とがった塔がうずを巻くような形のロマネスコも、カリフラワーやブロッコリーと同じ仲間の野菜です。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 生徒の声 ===== -->
+    <section class="section section-alt" id="voice">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-badge">STUDENTS' VOICE</span>
+          <h2 class="section-title">育てた生徒たちの声</h2>
+          <p class="section-sub">手をかけたぶんだけ、思い出になりました。</p>
+        </div>
+        <!-- blockquote に感想、figcaption に学年・イニシャルを書きます -->
+        <div class="voice-grid">
+          <figure class="voice-card">
+            <blockquote><span class="blank">感想：未記入</span></blockquote>
+            <figcaption>🥬 <span class="blank">学年・名前：未記入</span></figcaption>
+          </figure>
+          <figure class="voice-card">
+            <blockquote><span class="blank">感想：未記入</span></blockquote>
+            <figcaption>🥦 <span class="blank">学年・名前：未記入</span></figcaption>
+          </figure>
+          <figure class="voice-card">
+            <blockquote><span class="blank">感想：未記入</span></blockquote>
+            <figcaption>🥬 <span class="blank">学年・名前：未記入</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== フッター ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-emoji">🥬</span>
+        <span class="brand-text">栽培日記</span>
+      </div>
+      <p class="footer-text">生徒たちのキャベツ・ブロッコリー・カリフラワー栽培を記録するフォトギャラリーサイト</p>
+      <p class="footer-copy">© <span id="year"></span> 栽培日記 — アブラナ科の仲間たちをお届け 🥦</p>
+    </div>
+  </footer>
+
+  <!-- ===== ライトボックス ===== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="写真の拡大表示">
+    <button class="lightbox-close" id="lb-close" aria-label="閉じる">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lb-prev" aria-label="前の写真">‹</button>
+    <figure class="lightbox-figure">
+      <img src="" alt="" id="lb-img" />
+      <figcaption id="lb-caption"></figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" id="lb-next" aria-label="次の写真">›</button>
+  </div>
+
+  <a href="#top" class="to-top" aria-label="ページの先頭へ戻る">↑</a>
+
+  <script src="js/gallery-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

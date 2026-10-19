@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="キャベツ">
+  <ellipse cx="50" cy="58" rx="42" ry="34" fill="#6fae4c"/>
+  <ellipse cx="22" cy="54" rx="16" ry="24" fill="#86c25a" transform="rotate(-25 22 54)"/>
+  <ellipse cx="78" cy="54" rx="16" ry="24" fill="#86c25a" transform="rotate(25 78 54)"/>
+  <circle cx="50" cy="56" r="28" fill="#c7e59b"/>
+  <path d="M50 30 C44 44 44 66 50 84" fill="none" stroke="#8cc56a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M30 46 C40 50 46 58 48 70" fill="none" stroke="#a8d77c" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M70 46 C60 50 54 58 52 70" fill="none" stroke="#a8d77c" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M30 60 C36 66 42 72 46 80" fill="none" stroke="#a8d77c" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M70 60 C64 66 58 72 54 80" fill="none" stroke="#a8d77c" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
