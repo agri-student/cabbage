@@ -36,6 +36,24 @@ const GALLERY_PHOTOS = [
     category: "seed",
   },
   {
+    src: "images/IMG_7242.JPG",
+    caption: "定植",
+    crop: "cabbage",
+    category: "seed",
+  },
+　{
+    src: "images/IMG_7256.JPG",
+    caption: "定植",
+    crop: "cabbage",
+    category: "seed",
+  },
+  {
+    src: "images/IMG_7258.JPG",
+    caption: "水やり",
+    crop: "cabbage",
+    category: "seed",
+  },
+  {
     src: "images/placeholder-broccoli.svg",
     caption: "ブロッコリーの写真（準備中）",
     crop: "broccoli",
