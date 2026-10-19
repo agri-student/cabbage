@@ -77,9 +77,12 @@ const GALLERY_PHOTOS = [
     crop: "cabbage",
     category: "grow",
   },
-
-
-
+  {
+    src: "images/IMG_7426.JPG",
+    caption: "追肥２回目",
+    crop: "cabbage",
+    category: "care",
+  },
 ];
 
 /* 野菜名を日本語ラベルに変換する対応表（ギャラリーのタグ表示に使用） */
