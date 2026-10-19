@@ -12,6 +12,8 @@
   --broccoli: #3f7f3a;       /* ブロッコリーの濃い緑 */
   --cauli: #f4ecd2;          /* カリフラワーのクリーム色 */
   --cauli-deep: #d8c690;
+  --orange: #f0963a;         /* オレンジカリフラワー */
+  --orange-soft: #fdebd6;
   --bloom: #e0a92e;          /* アブラナの花の黄色（アクセント） */
   --cream: #fbfcf5;          /* 背景 */
   --ink: #26381f;            /* 文字色 */
@@ -129,15 +131,16 @@ a { color: inherit; text-decoration: none; }
 .about-card p { color: var(--ink-soft); font-size: .96rem; }
 
 /* ===== 育てた品種 ===== */
-.variety-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 26px; }
+.variety-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px; }
 .variety-card {
-  background: var(--white); border-radius: var(--radius-lg); padding: 30px 30px 26px;
+  background: var(--white); border-radius: var(--radius-lg); padding: 28px 24px 24px;
   box-shadow: var(--shadow); border-top: 6px solid var(--leaf-light);
   transition: transform .25s, box-shadow .25s;
 }
 .variety-card.crop-cabbage { border-top-color: var(--leaf-light); }
 .variety-card.crop-broccoli { border-top-color: var(--broccoli); }
 .variety-card.crop-cauliflower { border-top-color: var(--cauli-deep); }
+.variety-card.crop-cauliflower-orange { border-top-color: var(--orange); }
 .variety-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
 .variety-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
 .variety-emoji {
@@ -146,6 +149,8 @@ a { color: inherit; text-decoration: none; }
 }
 .variety-emoji img { width: 40px; height: 40px; }
 .crop-cauliflower .variety-emoji { background: var(--cauli); }
+.crop-cauliflower-orange .variety-emoji { background: var(--orange-soft); }
+.variety-crop { font-size: .8rem; font-weight: 800; color: var(--leaf); letter-spacing: .05em; }
 .variety-head h3 { color: var(--leaf-dark); font-size: 1.35rem; line-height: 1.3; }
 .variety-type { color: var(--bloom); font-weight: 700; font-size: .85rem; margin-top: 2px; }
 .variety-lead { color: var(--ink); font-weight: 500; margin-bottom: 14px; }
@@ -153,6 +158,7 @@ a { color: inherit; text-decoration: none; }
 .variety-feature li { position: relative; padding-left: 26px; color: var(--ink-soft); font-size: .96rem; margin-bottom: 8px; }
 .variety-feature li::before { content: "🌿"; position: absolute; left: 0; top: 0; font-size: .95rem; }
 .variety-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.variety-source { margin-top: 26px; text-align: center; font-size: .85rem; color: var(--ink-soft); }
 .variety-tags span {
   font-size: .8rem; font-weight: 700; color: var(--leaf-dark);
   background: var(--cabbage-cream); padding: 5px 14px; border-radius: 999px;
