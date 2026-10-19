@@ -197,24 +197,18 @@
           <p class="section-sub">写真をタップすると大きく表示されます。</p>
         </div>
 
-        <div class="filter-bar" role="group" aria-label="野菜で絞り込み">
-          <button class="filter-btn is-active" data-group="crop" data-filter="all" aria-pressed="true">すべての野菜</button>
-          <button class="filter-btn" data-group="crop" data-filter="cabbage" aria-pressed="false"><img src="images/icon-cabbage.svg" alt="" />キャベツ</button>
-          <button class="filter-btn" data-group="crop" data-filter="broccoli" aria-pressed="false"><img src="images/icon-broccoli.svg" alt="" />ブロッコリー</button>
-          <button class="filter-btn" data-group="crop" data-filter="cauliflower" aria-pressed="false"><img src="images/icon-cauliflower.svg" alt="" />カリフラワー</button>
-        </div>
-        <div class="filter-bar filter-bar-sub" role="group" aria-label="作業で絞り込み">
-          <button class="filter-btn is-active" data-group="category" data-filter="all" aria-pressed="true">すべての作業</button>
-          <button class="filter-btn" data-group="category" data-filter="seed" aria-pressed="false">定植</button>
-          <button class="filter-btn" data-group="category" data-filter="care" aria-pressed="false">日々のお世話</button>
-          <button class="filter-btn" data-group="category" data-filter="grow" aria-pressed="false">育つ様子</button>
-          <button class="filter-btn" data-group="category" data-filter="harvest" aria-pressed="false">収穫・試食</button>
+        <div class="filter-bar" role="group" aria-label="写真の絞り込み">
+          <button class="filter-btn is-active" data-filter="all" aria-pressed="true">すべて</button>
+          <button class="filter-btn" data-filter="seed" aria-pressed="false">定植</button>
+          <button class="filter-btn" data-filter="care" aria-pressed="false">日々のお世話</button>
+          <button class="filter-btn" data-filter="grow" aria-pressed="false">育つ様子</button>
+          <button class="filter-btn" data-filter="harvest" aria-pressed="false">収穫・試食</button>
         </div>
 
         <div class="gallery" id="gallery-grid">
           <!-- JavaScriptで写真を差し込みます -->
         </div>
-        <p class="gallery-empty" id="gallery-empty" hidden>この組み合わせの写真はまだありません。</p>
+        <p class="gallery-empty" id="gallery-empty" hidden>この作業の写真はまだありません。</p>
       </div>
     </section>
 

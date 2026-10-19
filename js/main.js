@@ -1,6 +1,6 @@
 /* =========================================================
    栽培日記 — メインスクリプト
-   ・ギャラリーの描画とフィルタリング（野菜 × 作業）
+   ・ギャラリーの描画とフィルタリング
    ・ライトボックス（拡大表示）
    ・栽培カレンダーの切り替え
    ・スマホメニュー / スクロール演出 / トップへ戻る
@@ -12,15 +12,13 @@
   const grid = document.getElementById("gallery-grid");
   const emptyMsg = document.getElementById("gallery-empty");
   const photos = typeof GALLERY_PHOTOS !== "undefined" ? GALLERY_PHOTOS : [];
-  const cropLabels = typeof CROP_LABELS !== "undefined" ? CROP_LABELS : {};
-  const categoryLabels = typeof CATEGORY_LABELS !== "undefined" ? CATEGORY_LABELS : {};
+  const labels = typeof CATEGORY_LABELS !== "undefined" ? CATEGORY_LABELS : {};
 
   /* いま選ばれている絞り込み条件 */
-  const filters = { crop: "all", category: "all" };
+  let currentFilter = "all";
 
   function matches(photo) {
-    return (filters.crop === "all" || photo.crop === filters.crop) &&
-      (filters.category === "all" || photo.category === filters.category);
+    return currentFilter === "all" || photo.category === currentFilter;
   }
 
   function renderGallery() {
@@ -33,11 +31,9 @@
       item.dataset.index = String(index);
       item.setAttribute("aria-label", (photo.caption || "写真") + " を拡大表示");
 
-      const tags = [cropLabels[photo.crop], categoryLabels[photo.category]].filter(Boolean);
+      const tag = labels[photo.category] || "";
       item.innerHTML =
-        (tags.length ? '<span class="gallery-tags">' + tags.map(function (t) {
-          return '<span class="gallery-tag">' + t + "</span>";
-        }).join("") + "</span>" : "") +
+        (tag ? '<span class="gallery-tag">' + tag + "</span>" : "") +
         '<img src="' + photo.src + '" alt="' + (photo.caption || "栽培の写真") + '" loading="lazy" />' +
         '<span class="gallery-caption">' + (photo.caption || "") + "</span>";
 
@@ -63,16 +59,14 @@
   const filterButtons = document.querySelectorAll(".filter-btn");
   filterButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
-      const group = btn.dataset.group;
       filterButtons.forEach(function (b) {
-        if (b.dataset.group !== group) return;
         b.classList.remove("is-active");
         b.setAttribute("aria-pressed", "false");
       });
       btn.classList.add("is-active");
       btn.setAttribute("aria-pressed", "true");
 
-      filters[group] = btn.dataset.filter;
+      currentFilter = btn.dataset.filter;
       applyFilters();
     });
   });
