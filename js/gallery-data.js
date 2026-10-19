@@ -24,8 +24,14 @@
 
 const GALLERY_PHOTOS = [
   {
-    src: "images/placeholder-cabbage.svg",
-    caption: "キャベツの写真（準備中）",
+    src: "images/IMG_7251.JPG",
+    caption: "苗選び中",
+    crop: "cabbage",
+    category: "seed",
+  },
+  {
+    src: "images/IMG_7252.JPG",
+    caption: "苗選び中",
     crop: "cabbage",
     category: "seed",
   },
