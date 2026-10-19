@@ -54,17 +54,32 @@ const GALLERY_PHOTOS = [
     category: "seed",
   },
   {
-    src: "images/placeholder-broccoli.svg",
-    caption: "ブロッコリーの写真（準備中）",
-    crop: "broccoli",
-    category: "seed",
+    src: "images/IMG_7289.JPG",
+    caption: "追肥１回目",
+    crop: "cabbage",
+    category: "care",
   },
   {
-    src: "images/placeholder-cauliflower.svg",
-    caption: "カリフラワーの写真（準備中）",
-    crop: "cauliflower",
-    category: "seed",
+    src: "images/IMG_7293.JPG",
+    caption: "追肥１回目",
+    crop: "cabbage",
+    category: "care",
   },
+  {
+    src: "images/IMG_7288.JPG",
+    caption: "生育調査中",
+    crop: "cabbage",
+    category: "grow",
+  },
+  {
+    src: "images/IMG_7431.JPG",
+    caption: "あおむしさんこんにちは",
+    crop: "cabbage",
+    category: "grow",
+  },
+
+
+
 ];
 
 /* 野菜名を日本語ラベルに変換する対応表（ギャラリーのタグ表示に使用） */
