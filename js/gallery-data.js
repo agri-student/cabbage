@@ -71,7 +71,7 @@ const GALLERY_PHOTOS = [
     category: "care",
   },
     {
-    src: "images/IMG_7665.JPG",
+    src: "images/IMG_7666.JPG",
     caption: "順調に育っています",
     category: "care",
   },
