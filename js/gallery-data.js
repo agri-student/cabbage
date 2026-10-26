@@ -65,6 +65,21 @@ const GALLERY_PHOTOS = [
     caption: "追肥２回目",
     category: "care",
   },
+     {
+    src: "images/IMG_7673.JPG",
+    caption: "追肥３回目",
+    category: "care",
+  },
+    {
+    src: "images/IMG_7665.JPG",
+    caption: "順調に育っています",
+    category: "care",
+  },
+    {
+    src: "images/IMG_7668.JPG",
+    caption: "中耕中",
+    category: "care",
+  },
 ];
 
 /* 作業名を日本語ラベルに変換する対応表（ギャラリーのタグ表示に使用） */
