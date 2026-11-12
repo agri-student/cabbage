@@ -80,6 +80,31 @@ const GALLERY_PHOTOS = [
     caption: "中耕中",
     category: "care",
   },
+    {
+    src: "images/IMG_8091.JPG",
+    caption: "収穫",
+    category: "harvest",
+  },
+    {
+    src: "images/IMG_8102.JPG",
+    caption: "獲ったどぉ",
+    category: "harvest",
+  },
+    {
+    src: "images/IMG_8110.JPG",
+    caption: "今日イチのブロッコリー",
+    category: "harvest",
+  },
+    {
+    src: "images/IMG_8114.JPG",
+    caption: "包装までしっかりと",
+    category: "harvest",
+  },
+    {
+    src: "images/IMG_8099.JPG",
+    caption: "収量調査中",
+    category: "harvest",
+  },
 ];
 
 /* 作業名を日本語ラベルに変換する対応表（ギャラリーのタグ表示に使用） */
